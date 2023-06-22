@@ -12,6 +12,10 @@
   <script src="script.js" defer></script>
   <!-- my style -->
   <link rel="stylesheet" href="style.css"></link>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- 
@@ -35,20 +39,27 @@
       <div class="pageviews mobile">
         <h1 class="pv"><span class="pv__number" id="pv__number"></span> pageviews</h1>
       </div>
-      <h1 class="price">$<span class="dollars" id="dollars"></span>/month</h1>
-      <div class="pageviews desktop" style="display: none;">
-        <h1 class="pv"><span class="pv__number">100k</span> pageviews</h1>
-        <h1 class="price">$<span class="dollars">16.00</span>/month</h1>
-      </div>
       <div class="range__holder">
-        <input type="range" class="form-range" min="0" max="4" id="customRange2">
+        <input type="range" class="form-range custom-slider"  min="0" max="4" id="customRange2">
       </div>
-      <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" data-toggle="switch" data-on-text="On" data-off-text="Off">
+      <div class="price__holder">
+        <h1 class="price"><span class="dollars" id="dollars"></span>/month</h1>
       </div>
-      
-      
-
+      <div class="container billing__section">
+        <div class="row">
+          <div class="col"><!--empty--></div>
+          <div class="col-auto time__and__switch">
+            <span class="time">Monthly Billing</span>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" data-toggle="switch" data-on-text="On" data-off-text="Off">
+            </div>
+            <span class="time">Yearly Billing</span>
+          </div>
+          <div class="col dis__col">
+            <span class="discount">-25%</span>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="benefits__and__button"></section>
   </main>

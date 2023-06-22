@@ -1,6 +1,7 @@
 // variables
 const slider = document.getElementById('customRange2');
 const pageViews = document.getElementById('pv__number');
+// const pageViews = document.querySelectorAll('pv__number');
 const dollars = document.getElementById('dollars');
 const toggle = document.getElementById('flexSwitchCheckDefault');
 let discount = false;
@@ -28,7 +29,7 @@ const updateSlider = () => {
     if (discount) {
         priceNumber = (priceNumber * 0.75);
     }
-    dollars.innerText = priceNumber;
+    dollars.innerText = `$${priceNumber}`;
 
     //views
     if ([...String(viewsNumber)].length === 5) {

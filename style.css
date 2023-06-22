@@ -1,3 +1,61 @@
+* {
+  font-family: 'Manrope', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
+body {
+  min-height: 100vh; }
+
+section.interactive {
+  color: #858fad; }
+  section.interactive h1 {
+    font-size: 12px;
+    font-weight: 800; }
+  section.interactive div.range__holder {
+    display: flex;
+    align-items: center; }
+    section.interactive div.range__holder .custom-slider::-webkit-slider-thumb {
+      width: 40px;
+      /* Adjust the width as desired */
+      height: 40px;
+      /* Adjust the height as desired */
+      transform: translate(0, -30%);
+      border-radius: 50%;
+      background-image: url("images/icon-slider.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #10d5c2; }
+    section.interactive div.range__holder .custom-slider::-moz-range-thumb {
+      width: 40px;
+      /* Adjust the width as desired */
+      height: 40px;
+      /* Adjust the height as desired */
+      border-radius: 50%; }
+    section.interactive div.range__holder .custom-slider::-ms-thumb {
+      width: 40px;
+      /* Adjust the width as desired */
+      height: 40px;
+      /* Adjust the height as desired */
+      border-radius: 50%; }
+  section.interactive span.dollars {
+    font-size: 32px;
+    color: #293356; }
+  section.interactive .billing__section {
+    font-size: 12px; }
+    section.interactive .billing__section .time__and__switch {
+      display: flex;
+      align-items: center;
+      gap: 12px; }
+    section.interactive .billing__section .form-check {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      section.interactive .billing__section .form-check .form-check-input {
+        height: 22px;
+        width: 43px; }
+    section.interactive .billing__section .dis__col {
+      display: flex;
+      align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
