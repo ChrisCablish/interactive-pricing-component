@@ -55,6 +55,7 @@ body {
 main {
     width: 90%;
     border: 1px solid black;
+    padding: 0 24px 0 24px;
     
 }
 
@@ -64,6 +65,7 @@ section.interactive {
     h1 {
         font-size: 12px;
         font-weight: 800;
+        margin-top: 34px;
     }
 
     div.range__holder {
@@ -71,6 +73,9 @@ section.interactive {
         align-items: center;
 
 
+        .custom-slider {
+            margin: 25px 0;
+        }
         //slider button
         .custom-slider::-webkit-slider-thumb {
             width: 40px; /* Adjust the width as desired */
@@ -110,6 +115,10 @@ section.interactive {
           .custom-slider::-ms-track {
             background-color: $soft-cyan;
           }
+    }
+
+    .price__holder {
+        margin-bottom: 34px;
     }
 
     span.dollars {
@@ -162,6 +171,8 @@ section.interactive {
 }
 
 .benefits__and__button {
+    color: $grayish-blue;
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,6 +187,15 @@ section.interactive {
         .check {
         
         }
+
+    }
+
+    button {
+        color: $pale-blue;
+        background-color: $dark-desaturated-blue;
+        font-weight: 800;
+        padding: 12px 46px;
+        border-radius: 2rem;
     }
 }
 

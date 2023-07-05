@@ -13,16 +13,20 @@ body {
 
 main {
   width: 90%;
-  border: 1px solid black; }
+  border: 1px solid black;
+  padding: 0 24px 0 24px; }
 
 section.interactive {
   color: #858fad; }
   section.interactive h1 {
     font-size: 12px;
-    font-weight: 800; }
+    font-weight: 800;
+    margin-top: 34px; }
   section.interactive div.range__holder {
     display: flex;
     align-items: center; }
+    section.interactive div.range__holder .custom-slider {
+      margin: 25px 0; }
     section.interactive div.range__holder .custom-slider::-webkit-slider-thumb {
       width: 40px;
       /* Adjust the width as desired */
@@ -54,6 +58,8 @@ section.interactive {
       background-color: #a5f3eb; }
     section.interactive div.range__holder .custom-slider::-ms-track {
       background-color: #a5f3eb; }
+  section.interactive .price__holder {
+    margin-bottom: 34px; }
   section.interactive span.dollars {
     font-size: 32px;
     color: #293356; }
@@ -84,6 +90,8 @@ section.interactive {
       align-items: center; }
 
 .benefits__and__button {
+  color: #858fad;
+  font-size: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,5 +101,11 @@ section.interactive {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  .benefits__and__button button {
+    color: #bdccff;
+    background-color: #293356;
+    font-weight: 800;
+    padding: 12px 46px;
+    border-radius: 2rem; }
 
 /*# sourceMappingURL=style.css.map */
