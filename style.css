@@ -5,7 +5,15 @@
   padding: 0; }
 
 body {
-  min-height: 100vh; }
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; }
+
+main {
+  width: 90%;
+  border: 1px solid black; }
 
 section.interactive {
   color: #858fad; }
@@ -25,19 +33,27 @@ section.interactive {
       background-image: url("images/icon-slider.svg");
       background-position: center;
       background-repeat: no-repeat;
-      background-color: #10d5c2; }
+      background-color: #10d5c2;
+      box-shadow: 0 12px 1rem 0 rgba(16, 213, 194, 0.4); }
     section.interactive div.range__holder .custom-slider::-moz-range-thumb {
       width: 40px;
       /* Adjust the width as desired */
       height: 40px;
       /* Adjust the height as desired */
-      border-radius: 50%; }
+      border-radius: 50%;
+      box-shadow: -1010px 0 0 1000px #666; }
     section.interactive div.range__holder .custom-slider::-ms-thumb {
       width: 40px;
       /* Adjust the width as desired */
       height: 40px;
       /* Adjust the height as desired */
       border-radius: 50%; }
+    section.interactive div.range__holder .custom-slider::-webkit-slider-runnable-track {
+      background-color: #a5f3eb; }
+    section.interactive div.range__holder .custom-slider::-moz-range-track {
+      background-color: #a5f3eb; }
+    section.interactive div.range__holder .custom-slider::-ms-track {
+      background-color: #a5f3eb; }
   section.interactive span.dollars {
     font-size: 32px;
     color: #293356; }
@@ -54,8 +70,28 @@ section.interactive {
       section.interactive .billing__section .form-check .form-check-input {
         height: 22px;
         width: 43px; }
+      section.interactive .billing__section .form-check .form-check-input:checked {
+        background-color: #10d5c2;
+        border-color: #10d5c2; }
+      section.interactive .billing__section .form-check .form-check-input:focus {
+        box-shadow: none;
+        background-color: none;
+        border-color: none;
+        color: none;
+        outline: none; }
     section.interactive .billing__section .dis__col {
       display: flex;
       align-items: center; }
+
+.benefits__and__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .benefits__and__button .checklist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
 
 /*# sourceMappingURL=style.css.map */

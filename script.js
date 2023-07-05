@@ -6,6 +6,7 @@ const dollars = document.getElementById('dollars');
 const toggle = document.getElementById('flexSwitchCheckDefault');
 let discount = false;
 
+
 // objects and functions 
 class Price {
     constructor (views, price) {

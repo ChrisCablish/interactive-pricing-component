@@ -34,6 +34,8 @@ $light-red: hsl(15, 100%, 70%);
 $pale-blue: hsl(226, 100%, 87%);
 
 
+
+
 *{
     font-family: 'Manrope', sans-serif;
     box-sizing: border-box;
@@ -43,6 +45,17 @@ $pale-blue: hsl(226, 100%, 87%);
 
 body {
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+main {
+    width: 90%;
+    border: 1px solid black;
+    
 }
 
 section.interactive {
@@ -57,30 +70,45 @@ section.interactive {
         display: flex;
         align-items: center;
 
+
+        //slider button
         .custom-slider::-webkit-slider-thumb {
             width: 40px; /* Adjust the width as desired */
             height: 40px; /* Adjust the height as desired */
             transform: translate(0,-30%);
             border-radius: 50%;
-
             background-image: url('images/icon-slider.svg');
-            
             background-position: center;
             background-repeat: no-repeat;
-
             background-color: $strong-cyan;
+            box-shadow: 0 12px 1rem 0 hsla(174, 86%, 45%, 0.4);
           }
   
           .custom-slider::-moz-range-thumb {
             width: 40px; /* Adjust the width as desired */
             height: 40px; /* Adjust the height as desired */
             border-radius: 50%;
+            box-shadow: -1010px 0 0 1000px #666;
           }
   
           .custom-slider::-ms-thumb {
             width: 40px; /* Adjust the width as desired */
             height: 40px; /* Adjust the height as desired */
             border-radius: 50%;
+          }
+
+          //slider track
+
+          .custom-slider::-webkit-slider-runnable-track {
+            background-color: $soft-cyan; 
+          }
+  
+          .custom-slider::-moz-range-track {
+            background-color: $soft-cyan;
+          }
+  
+          .custom-slider::-ms-track {
+            background-color: $soft-cyan;
           }
     }
 
@@ -103,10 +131,24 @@ section.interactive {
             display: flex;
             justify-content: center;
             align-items: center;
+            
            
             .form-check-input {
                 height: 22px;
                 width: 43px;
+            }
+
+            .form-check-input:checked {
+                background-color: $strong-cyan;
+                border-color: $strong-cyan;     
+              }
+
+            .form-check-input:focus {
+                box-shadow: none;
+                background-color: none;
+                border-color: none;
+                color: none;
+                outline: none;
             }
         }
 
@@ -115,10 +157,28 @@ section.interactive {
             align-items: center;
         }
 
-
     }
 
-
 }
+
+.benefits__and__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .checklist {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .check {
+        
+        }
+    }
+}
+
+
 
 
