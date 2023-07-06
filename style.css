@@ -14,19 +14,22 @@ body {
 main {
   width: 90%;
   border: 1px solid black;
-  padding: 0 24px 0 24px; }
+  border-radius: 1rem; }
 
 section.interactive {
   color: #858fad; }
   section.interactive h1 {
     font-size: 12px;
     font-weight: 800;
-    margin-top: 34px; }
+    margin-top: 34px;
+    text-align: center; }
   section.interactive div.range__holder {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     section.interactive div.range__holder .custom-slider {
-      margin: 25px 0; }
+      margin: 25px 0;
+      width: 90%; }
     section.interactive div.range__holder .custom-slider::-webkit-slider-thumb {
       width: 40px;
       /* Adjust the width as desired */
@@ -62,9 +65,12 @@ section.interactive {
     margin-bottom: 34px; }
   section.interactive span.dollars {
     font-size: 32px;
-    color: #293356; }
+    color: #293356;
+    padding-right: 8px; }
   section.interactive .billing__section {
-    font-size: 12px; }
+    font-size: 12px;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #eaeefb; }
     section.interactive .billing__section .time__and__switch {
       display: flex;
       align-items: center;
@@ -88,6 +94,10 @@ section.interactive {
     section.interactive .billing__section .dis__col {
       display: flex;
       align-items: center; }
+      section.interactive .billing__section .dis__col .discount {
+        background-color: orange;
+        border-radius: 8px;
+        padding: 4px 8px; }
 
 .benefits__and__button {
   color: #858fad;
@@ -95,17 +105,22 @@ section.interactive {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  gap: 32px; }
   .benefits__and__button .checklist {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    gap: 10px; }
   .benefits__and__button button {
     color: #bdccff;
     background-color: #293356;
     font-weight: 800;
     padding: 12px 46px;
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    border: none; }
 
 /*# sourceMappingURL=style.css.map */

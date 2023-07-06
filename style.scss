@@ -55,7 +55,8 @@ body {
 main {
     width: 90%;
     border: 1px solid black;
-    padding: 0 24px 0 24px;
+    border-radius: 1rem;
+    // padding: 0 24px 0 24px;
     
 }
 
@@ -66,15 +67,18 @@ section.interactive {
         font-size: 12px;
         font-weight: 800;
         margin-top: 34px;
+        text-align: center;
     }
 
     div.range__holder {
         display: flex;
         align-items: center;
+        justify-content: center;
 
 
         .custom-slider {
             margin: 25px 0;
+            width: 90%;
         }
         //slider button
         .custom-slider::-webkit-slider-thumb {
@@ -124,10 +128,13 @@ section.interactive {
     span.dollars {
         font-size: 32px;
         color: $dark-desaturated-blue;
+        padding-right: 8px;
     }
 
     .billing__section {
         font-size: 12px;
+        padding-bottom: 38px;
+        border-bottom: 1px solid $light-grayish-blue;
         
 
         .time__and__switch {
@@ -164,6 +171,12 @@ section.interactive {
         .dis__col{
             display: flex;
             align-items: center;
+
+            .discount {
+                background-color: orange;
+                border-radius: 8px;
+                padding: 4px 8px;
+            }
         }
 
     }
@@ -177,12 +190,16 @@ section.interactive {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    gap: 32px;
 
     .checklist {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 10px;
 
         .check {
         
@@ -196,6 +213,7 @@ section.interactive {
         font-weight: 800;
         padding: 12px 46px;
         border-radius: 2rem;
+        border: none;
     }
 }
 

@@ -30,7 +30,7 @@ const updateSlider = () => {
     if (discount) {
         priceNumber = (priceNumber * 0.75);
     }
-    dollars.innerText = `$${priceNumber}`;
+    dollars.innerText = `$${priceNumber}.00`;
 
     //views
     if ([...String(viewsNumber)].length === 5) {
