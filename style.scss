@@ -46,17 +46,20 @@ $pale-blue: hsl(226, 100%, 87%);
 body {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    background-color: #F1F5FE;
     
 }
 
 main {
     width: 90%;
-    border: 1px solid black;
     border-radius: 1rem;
     // padding: 0 24px 0 24px;
+    background-color: white;
+    box-shadow: 0 8px 15px hsla(0, 0%, 0%, 0.1) ;
     
 }
 
@@ -141,6 +144,7 @@ section.interactive {
            display: flex;
            align-items: center;
            gap: 12px;
+           padding: 0;
         }
 
         .form-check {
@@ -173,14 +177,14 @@ section.interactive {
             align-items: center;
 
             .discount {
-                background-color: orange;
-                border-radius: 8px;
+                background-color: hsla(15, 100%, 70%, 0.2);
+                color: $light-red;
+                border-radius: 16px;
                 padding: 4px 8px;
             }
         }
 
     }
-
 }
 
 .benefits__and__button {
@@ -215,8 +219,38 @@ section.interactive {
         border-radius: 2rem;
         border: none;
     }
+
+    button:hover {
+        color: white;
+    }
+
 }
 
+.test__row {
+    border: 1px solid black;
+}
 
+.test__col {
+    border: 1px solid black;
+}
 
+@media screen and (min-width: 880px) {
 
+    main {
+        width: 40%;
+        padding: 1rem;
+    }
+
+    .benefits__and__button {
+        flex-direction: row;
+        gap: 0;
+         
+        
+        .checklist {
+            align-items: flex-start;
+            max-width: 50%;
+            
+
+        }
+    }
+}
